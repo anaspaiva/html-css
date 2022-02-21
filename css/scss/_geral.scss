@@ -1,0 +1,99 @@
+.intro {
+    margin: 100px 100px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+   
+.intro-geral {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+    
+.intro-geral h1 {
+    display: flex;
+    flex-wrap: wrap;
+    color: $roxo;
+    font-size: 3rem;
+    padding: 5px;
+       
+}
+
+.intro-geral p {
+    display: flex;
+    flex-wrap: wrap;
+    color: $cinza-escuro;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}
+
+.intro-avaliacao ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: $roxo;
+    font-size: .8rem;
+    font-weight: bold;
+    
+}
+
+.avaliacao {
+    margin: 100px 100px;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    font-size: .6rem;
+    justify-content: space-around;
+}
+.avaliacao-individual {
+    background: $roxo;
+    color: $branco;
+    margin: .8rem;
+    display: inline-block;
+    justify-content: end;
+    text-align: left;
+    padding: 1rem;
+    line-height: 1rem;
+    border-radius: 0.8rem;
+    
+    
+}
+
+.avaliacao-individual h2 {
+    color: $branco;
+    display: flex;
+    margin-right: -10px;
+    margin-left: 50px;
+    padding-top: 1rem;
+    
+}
+
+.avaliacao-individual span {
+    color: $rosa;
+    display: flex;
+    width: 7rem;
+    margin-right: -10px;
+    margin-left: 50px;
+
+}
+.avaliacao-individual p {
+    color: $branco;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    align-items: flex-end;
+    
+}
+  
+.avaliacao-individual img {
+    max-width: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 1rem;
+    
+    
+
+}
