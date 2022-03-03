@@ -14,7 +14,7 @@ ul {
 }
 
 body {
-  background-image: url(/assets/bg-pattern-top-desktop.svg), url(/assets/bg-pattern-bottom-desktop.svg);
+  background-image: url(../../assets/bg-pattern-top-desktop.svg), url(../../assets/bg-pattern-bottom-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -855px 0px, -263px 148px;
@@ -179,7 +179,7 @@ body {
 
 @media (max-width: 992px) and (min-width: 300px) {
   body {
-    background-image: url(/assets/bg-pattern-top-mobile.svg), url(/assets/bg-pattern-bottom-mobile.svg);
+    background-image: url(../../assets/bg-pattern-top-mobile.svg), url(../../assets/bg-pattern-bottom-mobile.svg);
     background-size: contain;
     background-position: 29px -29px,  0px 851px;
   }
