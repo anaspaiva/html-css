@@ -1,0 +1,235 @@
+// Background images desktop
+
+body {
+    background-image: url(/assets/bg-pattern-top-desktop.svg),
+                      url(/assets/bg-pattern-bottom-desktop.svg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -855px 0px,
+                         -263px 148px;
+}
+ 
+ // Intro - título e texto
+ 
+ .geral {
+    display: flex;
+    align-items: center;
+    margin: 20px 100px;
+}
+ 
+ .intro-geral {
+    width: 30vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 110px;
+    
+    h1 {
+        color: $roxo;
+        font-size: 3rem;
+     }
+    
+     p {
+        color: $cinza-escuro;
+        font-size: .9rem;
+        line-height: 1.5rem;
+        margin-top: 10px;
+     }
+}
+ 
+ //  Avaliação geral (parte das estrelas)
+
+ .avaliacao-geral {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    color: $roxo;
+    font-size: .7rem;
+    font-weight: bold;
+    border-radius:.3rem;
+}
+ 
+.av {
+    border-radius:.3rem;
+    background-color: $cinza-claro;
+    padding: 10px 50px;
+    &:hover {
+        opacity: 0.9;
+        transform:scale(1.02);
+        line-height: 1rem;
+    }
+}
+
+ .avaliacao-1 {
+    margin: 30px 160px;
+    margin-left: 30px;
+}
+
+.avaliacao-2 {
+    margin: 30px 100px;
+    margin-left: 80px;
+}
+
+.avaliacao-3 {
+    margin: 30px 50px;
+    margin-left: 150px;
+}
+ 
+.estrela {
+    padding-right: .50rem;
+}
+ 
+ // Parte de baixo (avaliacao-individual)
+ 
+.avaliacao-individual-geral {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 100px;
+    padding: 0px 70px;
+}
+
+.avaliacao-individual {
+    font-size: 10px;
+    background: $roxo;
+    line-height: 1rem;
+    border-radius: 0.6rem;
+    box-shadow: 5px 5px 0 1px $cinza-escuro; 
+    transition: .2s;
+    padding: .5rem;
+    &:hover {
+        opacity: 0.9;
+        transform:scale(1.02) ;
+        line-height: 1rem;
+    }
+}
+
+.avaliacao-colton {
+    margin: 0px 30px;
+}
+ 
+.avaliacao-irene {
+    margin: 20px 30px;
+}
+ 
+.avaliacao-anne {
+    margin: 50px 30px;
+}
+
+.nome-pessoa {
+    color: $branco;
+    display: flex;
+    margin-left: 80px;
+    margin-top: 5px;
+    padding-top: 1rem;
+} 
+
+.comprador-verificado {
+    color: $rosa;
+    display: flex;
+    flex-wrap: wrap;
+    width: 7rem;
+    margin-left: 80px
+}
+
+.texto-avaliacao { 
+    color: $branco;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+   
+ .imagem-pessoa {
+    max-width: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 0.8rem;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+@media  (max-width: 992px) and (min-width: 300px ) {
+
+    // Background images mobile
+
+    body {
+        background-image: url(/assets/bg-pattern-top-mobile.svg),
+                          url(/assets/bg-pattern-bottom-mobile.svg); 
+        background-size: contain;
+        background-position: 29px -29px, 
+                             0px 851px;
+    }
+
+    // Intro - título e texto
+
+    .geral {
+        flex-direction: column;
+        width: 100vw;
+        margin: 0px;
+    }
+    
+    .intro-geral {
+        width: 100vw;
+        margin: 10px 0px;
+        padding: 20px 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        h1 {
+            margin: 10px 50px;
+            font-size: 2rem;
+        }
+        p {
+            width: 80vw;
+            margin: 10px 50px;
+        }
+    }
+
+    //  Avaliação geral (parte das estrelas)
+
+    .avaliacao-geral {
+        margin: 0px;
+        justify-content: center; 
+    }
+
+    .av {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 80px;
+        margin: 10px 10px;
+
+    }
+    .avaliacao-1,
+    .avaliacao-2,
+    .avaliacao-3 {
+        margin: 10px;
+    }
+    
+    .estrela {
+    justify-content: center;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    }
+
+   // Parte de baixo (avaliacao-individual)
+
+    .avaliacao-individual-geral {
+        width: 100vw;
+        flex-direction: column;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .avaliacao-individual {
+        padding: 20px 0;
+        margin: 0px 10px;
+        box-shadow: inherit;
+    }
+
+    .avaliacao-colton,
+    .avaliacao-irene,
+    .avaliacao-anne {
+        box-sizing: border-box;
+        margin: 10px;
+    }
+}
